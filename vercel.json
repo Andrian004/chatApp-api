@@ -1,3 +1,4 @@
 {
+  "builds": [{ "src": "/src", "use": "@vercel/node" }],
   "rewrites": [{ "source": "/(.*)", "destination": "/src" }]
 }
