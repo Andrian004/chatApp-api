@@ -4,6 +4,7 @@
   "description": "pybro_api",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/",
     "dev": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
