@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 // config
 require("dotenv").config();
 connectDB();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 // import routes
 const userRoutes = require("./routes/userRoutes");
@@ -44,7 +44,7 @@ const server = app.listen(port, () => {
 });
 
 const io = require("socket.io")(server, {
-  pingTimeout: 60000,
+  pingTimeout: 30000,
   cors: {
     origin: "http://localhost:5173",
   },
